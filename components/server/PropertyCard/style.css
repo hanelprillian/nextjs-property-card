@@ -1,9 +1,46 @@
 .property-card {
-    position: relative;
-    border-radius: 4px;
-    overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(11, 17, 52, 0.2);
+  border-radius: 4px;
 }
 
-.property-card .property-card___thumbnail {
-    height: 272px;
+.property-card .property-card__thumbnail {
+  height: 272px;
+}
+
+.property-card .property-card__content {
+  background-color: #ffffff;
+  padding: 24px;
+}
+
+.property-card .property-card__content .title {
+  font-weight: 600;
+  color: #1a2258;
+}
+
+.property-card .property-card__content .address {
+  font-style: normal;
+  font-weight: 100;
+  color: #787d9c;
+}
+
+.property-card .property-card__content .price {
+  font-style: normal;
+  font-weight: 600;
+  color: #1a2258;
+}
+
+.property-card .property-card__content .other-info {
+  font-style: normal;
+  font-weight: 100;
+  color: #1a2258;
+}
+
+.property-card .property-card__content .price-from {
+  font-style: normal;
+  font-weight: 100;
+  color: #787d9c;
 }

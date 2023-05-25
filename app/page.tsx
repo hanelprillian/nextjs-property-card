@@ -30,7 +30,7 @@ export default async function Homepage() {
     <main className="container m-auto p-10">
       <div className="flex gap-3">
         {listings.map((listing) => (
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <PropertyCard {...listing} />
           </div>
         ))}

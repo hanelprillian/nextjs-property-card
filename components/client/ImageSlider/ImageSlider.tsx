@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import "./style.css";
+import Image from "next/image";
 
 export interface IImageSlider {
   images: string[];
@@ -20,24 +21,27 @@ export default function ImageSlider(props: IImageSlider) {
   }
 
   return (
-    <div className="image-slider">
-      <button className="image-slider__nav prev flex items-center justify-center" onClick={handlePrev}>
+    <section className="image-slider">
+      <button role="button" className="image-slider__nav prev flex items-center justify-center" onClick={handlePrev}>
         <ChevronLeftIcon />
       </button>
       <div className="slider-container">
         {images.map((image, index) => (
-          <img
+          <Image
+            loader={({ src }) => src}
             key={index}
             src={image}
-            alt="Slider"
+            alt={`Slide Image ${index}`}
             className={`slider-image ${index === currentImg ? "active" : "hidden"}`}
+            width={0}
+            height={0}
           />
         ))}
       </div>
-      <button className="image-slider__nav next flex items-center justify-center" onClick={handleNext}>
+      <button role="button" className="image-slider__nav next flex items-center justify-center" onClick={handleNext}>
         <ChevronRightIcon />
       </button>
-    </div>
+    </section>
   );
 }
 
