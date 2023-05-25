@@ -26,7 +26,6 @@ function mapResponse(data: any): IPropertyListing[] {
 export default async function Homepage() {
   const { result } = await getListing();
   const listings: IPropertyListing[] = mapResponse(result);
-  console.log("listings", listings);
   return (
     <main className="container m-auto p-10">
       <div className="flex gap-5 flex-wrap md:flex-nowrap">
