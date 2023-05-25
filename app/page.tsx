@@ -26,11 +26,12 @@ function mapResponse(data: any): IPropertyListing[] {
 export default async function Homepage() {
   const { result } = await getListing();
   const listings: IPropertyListing[] = mapResponse(result);
+  console.log("listings", listings);
   return (
     <main className="container m-auto p-10">
-      <div className="flex gap-3">
+      <div className="flex gap-5 flex-wrap md:flex-nowrap">
         {listings.map((listing) => (
-          <div className="lg:w-1/2">
+          <div className="w-full md:w-1/2">
             <PropertyCard {...listing} />
           </div>
         ))}
