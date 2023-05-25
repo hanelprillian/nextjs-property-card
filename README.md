@@ -7,9 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, copy .env.example to .env
-
-Then, run this commands
+Run this commands
 
 ```bash
 # install
