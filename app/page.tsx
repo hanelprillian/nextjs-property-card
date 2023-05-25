@@ -1,8 +1,9 @@
 import PropertyCard from "@/components/server/PropertyCard/PropertyCard";
 import IPropertyListing from "@/lib/interfaces/IPropertyListing";
+import listingData from "../data/mock/listing"
 
 async function getListing() {
-  return await (await fetch("http://localhost:3000/api/listing")).json();
+  return listingData;
 }
 
 function mapResponse(data: any): IPropertyListing[] {
