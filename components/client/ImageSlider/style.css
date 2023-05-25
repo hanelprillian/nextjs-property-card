@@ -1,0 +1,34 @@
+.image-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.image-slider:hover .image-slider__nav {
+  display: flex !important;
+}
+.image-slider .image-slider__nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  display: none;
+}
+.image-slider .image-slider__nav.prev {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.31838672969187676) 0%, rgba(0, 0, 0, 0) 100%);
+  left: 0;
+}
+.image-slider .image-slider__nav.next {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.31838672969187676) 0%, rgba(0, 0, 0, 0) 100%);
+  right: 0;
+}
+.image-slider .slider-container {
+  height: 100%;
+}
+.image-slider .slider-container .slider-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

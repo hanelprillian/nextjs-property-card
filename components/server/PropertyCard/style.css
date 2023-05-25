@@ -1,0 +1,9 @@
+.property-card {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.property-card .property-card___thumbnail {
+    height: 272px;
+}
